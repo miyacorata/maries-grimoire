@@ -6,6 +6,9 @@
 // @author       miyacorata
 // @match        https://www.pixiv.net/artworks/*
 // @grant        none
+// @downloadURL  https://github.com/miyacorata/maries-grimoire/raw/master/pixiv-artworks.user.js
+// @updateURL    https://github.com/miyacorata/maries-grimoire/raw/master/pixiv-artworks.user.js
+// @supportURL   https://github.com/miyacorata/maries-grimoire
 // ==/UserScript==
 
 (function() {
