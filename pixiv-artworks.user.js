@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Better pixiv artworks
 // @namespace    http://miyacorata.net/
-// @version      1.0.0
+// @version      1.0.1
 // @description  pixivイラストページに作用するスクリプトです
 // @author       miyacorata
 // @match        https://www.pixiv.net/artworks/*
