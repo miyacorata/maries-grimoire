@@ -30,7 +30,7 @@
         fedi_share.appendChild(share_button);
 
         fedi_share.addEventListener("click",()=>{
-            domain = window.prompt("共有先サーバのドメインを指定してください\n(mastodon or Misskey)","imastodon.net");
+            let domain = window.prompt("共有先サーバのドメインを指定してください\n(mastodon or Misskey)","imastodon.net");
             if(!domain){
                 alert("共有を中止しました");
                 return false;
@@ -39,10 +39,9 @@
                 let title = document.title;
                 window.open('https://'+domain+'/share?text='+title+'+'+url,'_blank','width=500,height=350');
             }
-        })
+        });
 
-        document.querySelector("#root > div.sc-AykKC.jiZwhV > div > div > main > section > div.sc-fzXfNd.bAzGIW > div > div.sc-LzMFm.jkOlKo > div > div.sc-LzNby.jkOmxl > section")
-            .appendChild(fedi_share);
+        document.querySelector("#root > div.sc-AykKC.jiZwhV > div > div > main > section > div.sc-fzXfNd.bAzGIW > div > div.sc-LzMEL.jkOlJa > div > div.sc-LzNbu.jkOmxh > section").appendChild(fedi_share);
     },2000);
 
 })();
