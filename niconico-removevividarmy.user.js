@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Remove vividarmy
 // @namespace    http://miyacorata.net/
-// @version      1.0.1
+// @version      1.0.2
 // @description  ビビッドアーミーとかを殺すスクリプトです
 // @author       miyacorata
 // @match        https://*.nicovideo.jp/*
@@ -9,6 +9,7 @@
 // @downloadURL  https://github.com/miyacorata/maries-grimoire/raw/master/niconico-removevividarmy.user.js
 // @updateURL    https://github.com/miyacorata/maries-grimoire/raw/master/niconico-removevividarmy.user.js
 // @supportURL   https://github.com/miyacorata/maries-grimoire
+// @run-at       document-start
 // ==/UserScript==
 
 (function() {
@@ -16,6 +17,8 @@
 
     document.addEventListener('DOMContentLoaded',()=>{
         let style = document.createElement('style');
+        style.setAttribute('id','VividArmyRemover');
+        style.setAttribute('type','text/css');
 
         /**
          * 非表示にされる広告
@@ -43,5 +46,6 @@
 */}).toString().match(/(?:\/\*(?:[\s\S]*?)\*\/)/).pop().replace(/^\/\*/, "").replace(/\*\/$/, "");
 
         document.head.appendChild(style);
+        console.info("[Done] niconico-RemoveVividArmy");
     });
 })();
