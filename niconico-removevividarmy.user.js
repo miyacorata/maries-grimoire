@@ -28,21 +28,14 @@
          *  * 動画ページのマーキーの中身
          */
         style.innerHTML = (function () {/*
-.MarqueeContainer {
-    display: none;
-}
-
-#pc_uni_top_228x1024_side_wall_left {
+.MarqueeContainer,
+#pc_uni_top_228x1024_side_wall_left,
+#pc_uni_top_228x1024_side_wall_right,
+.PcUniTop970x250BillboardAdContainer,
+.BaseLayout-billboard {
     display: none !important;
 }
 
-#pc_uni_top_228x1024_side_wall_right {
-    display: none !important;
-}
-
-.PcUniTop970x250BillboardAdContainer {
-    display: none !important;
-}
 */}).toString().match(/(?:\/\*(?:[\s\S]*?)\*\/)/).pop().replace(/^\/\*/, "").replace(/\*\/$/, "");
 
         document.head.appendChild(style);
