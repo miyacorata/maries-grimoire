@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         Remove vividarmy
 // @namespace    http://miyacorata.net/
-// @version      1.0.3
+// @version      1.1.0
 // @description  ビビッドアーミーとかを殺すスクリプトです
 // @author       miyacorata
 // @match        https://*.nicovideo.jp/*
+// @match        http://*.nicovideo.jp/*
 // @grant        none
 // @downloadURL  https://github.com/miyacorata/maries-grimoire/raw/master/niconico-removevividarmy.user.js
 // @updateURL    https://github.com/miyacorata/maries-grimoire/raw/master/niconico-removevividarmy.user.js
@@ -21,18 +22,18 @@
         style.setAttribute('type','text/css');
 
         /**
-         * 非表示にされる広告
-         *  * トップページの左右及び中央上部のビビッドアーミー広告
+         * 非表示にされる要素
+         *  * classに"AdContainer"あるいは"ads_sidewall"を含むすべての要素
          * 
          * ついでに非表示にされるやつ
          *  * 動画ページのマーキーの中身
          */
         style.innerHTML = (function () {/*
-.MarqueeContainer,
-#pc_uni_top_228x1024_side_wall_left,
-#pc_uni_top_228x1024_side_wall_right,
-.PcUniTop970x250BillboardAdContainer,
-.BaseLayout-billboard {
+.MarqueeContainer ,
+*[class*=AdContainer] ,
+*[class*=ads_sidewall] ,
+.Ads970x250Billboard
+{
     display: none !important;
 }
 
