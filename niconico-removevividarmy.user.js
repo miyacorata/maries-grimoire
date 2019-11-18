@@ -30,8 +30,10 @@
          */
         style.innerHTML = (function () {/*
 .MarqueeContainer ,
-*[class*=AdContainer] ,
-*[class*=ads_sidewall] ,
+*[class*="AdContainer"] ,
+*[class*="ads_sidewall"] ,
+img[src*="ads.nicovideo.jp"] ,
+iframe[src*="ads.nicovideo.jp"] ,
 .Ads970x250Billboard
 {
     display: none !important;
