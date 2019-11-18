@@ -2,9 +2,9 @@
 // @name         Remove vividarmy
 // @namespace    http://miyacorata.net/
 // @version      1.0.0
-// @description  ビビッドアーミーを殺すスクリプトです
+// @description  ビビッドアーミーとかを殺すスクリプトです
 // @author       miyacorata
-// @match        https://www.pixiv.net/artworks/*
+// @match        https://*.nicovideo.jp/*
 // @grant        none
 // @downloadURL  https://github.com/miyacorata/maries-grimoire/raw/master/niconico-removevividarmy.user.js
 // @updateURL    https://github.com/miyacorata/maries-grimoire/raw/master/niconico-removevividarmy.user.js
