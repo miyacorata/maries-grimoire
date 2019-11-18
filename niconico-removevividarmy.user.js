@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Remove vividarmy
 // @namespace    http://miyacorata.net/
-// @version      1.0.2
+// @version      1.0.3
 // @description  ビビッドアーミーとかを殺すスクリプトです
 // @author       miyacorata
 // @match        https://*.nicovideo.jp/*
