@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         TwiShareForward for fediverse
 // @namespace    http://miyacorata.net/
-// @version      1.0.0
+// @version      1.0.1
 // @description  Twitter共有をマストドンとかに飛ばせるやつです
 // @author       miyacorata
 // @match        https://twitter.com/intent/*
@@ -33,7 +33,7 @@
                 alert("共有を中止しました");
                 return false;
             }else{
-                let text = document.getElementById('status').value.replace('#','%23');
+                let text = document.getElementById('status').value.replace(/#/g,'%23').replace(/\n/g,'%0A');
                 location.href = 'https://'+domain+'/share?text='+text;
             }
         });
